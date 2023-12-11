@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crafting midle</title>
+    <link rel="stylesheet" href="css/generals.css">
+    <link rel="stylesheet" href="css/visualisation.css">
+</head>
+<body">
+    <div class="container-general">
+        <div class="background">
+                <div class="batle">
+                    <div class="rowE">
+                        <div class="slotE uno" id="uno"></div>
+                        <div class="slotE dos" id="dos"></div>
+                        <div class="slotE tres" id="tres"></div>
+                        <div class="slotE cuatro" id="cuatro"></div>
+                        <div class="slotE cinco" id="cinco"></div>
+                    </div>
+                        <!--  -->
+                    <div class="rowA">
+                        <div class="slotA seis" id="seis"></div>
+                        <div class="slotA siete" id="siete"></div>
+                        <div class="slotA ocho" id="ocho"></div>
+                        <div class="slotA nueve" id="nueve"></div>
+                        <div class="slotA diez" id="diez"></div>
+                    </div>
+                </div>
+                <div class="table"></div>
+                <div class="hand listHand">
+                </div>
+                <div class="mana"><div class="manaContainer"></div><div class="manaCount" value="2"></div></div>
+                <div class="buttonAtack buttons"><img src="source/new/atack.png" class="img" draggable='false' alt=""></div>
+                <div class="buttonPas buttons"><img src="source/new/pasTurn.png" class="img" draggable='false' alt=""></div>
+        </div>
+            <div class="mazo card"></div>
+            <div class="card player" id="player"><h3 class="atackP"></h3><h3 class="sep">/</h3><h3 class="lifeP"></h3></div>
+            <div id="counterTurn">0</div><div id="counterAtacks">0</div>
+            
+    </div>
+    <div id="gameOver" class=""></div>
+    <script src="javaSript/chargeBatle.js" type="module"></script>
+</body>
+</body>
+</html>

@@ -1,0 +1,48 @@
+.goblin{
+    display: inline-block;
+    width: 9.5vw;
+    height: 30vh;
+    background-image: url(../source/Goblin2.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.goblins{
+    display: inline-block;
+    width: 9.5vw;
+    height: 30vh;
+    background-image: url(../source/Goblin2.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.templari{
+    display: inline-block;
+    width: 9.5vw;
+    height: 30vh;
+    background-image: url(../source/Templario2.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.druida{
+    display: inline-block;
+    width: 9.5vw;
+    height: 30vh;
+    background-image: url(../source/Druida.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.bardo{
+    display: inline-block;
+    width: 9.5vw;
+    height: 30vh;
+    background-image: url(../source/Bardo.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.golem{
+    display: inline-block;
+    width: 9.5vw;
+    height: 30vh;
+    background-image: url(../source/Golem_comun2.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}

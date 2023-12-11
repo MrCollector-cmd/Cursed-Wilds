@@ -1,0 +1,15 @@
+export const mana = document.querySelector('.mana');
+export const manaCont = document.querySelector('.manaCount')
+export const buttonAtack = document.querySelector('.buttonAtack');
+export const buttonPas= document.querySelector('.buttonPas');
+export const rowA = document.querySelector('.rowA');
+export const rowE = document.querySelector('.rowE');
+export const hand = document.querySelector('.hand');
+export const listHand = document.querySelectorAll('.listHand');
+export const batlle = document.querySelector('.batle');
+export const mazo = document.querySelector('.mazo');
+export const player = document.getElementById('player')
+export const turn = document.getElementById('counterTurn');
+export const atacks = document.getElementById('counterAtacks');
+export const gameOver = document.getElementById('gameOver');
+export var [...slotsA] = batlle.children[1].children;

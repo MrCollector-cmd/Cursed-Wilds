@@ -1,0 +1,340 @@
+@font-face {
+    font-family: 'stan';
+    src: url('../font/standard/stan0753.ttf') format("truetype");
+    font-weight: normal;
+    font-style: normal;
+ }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'stan';
+}
+body{overflow: hidden;}
+h1{
+    position: absolute;
+    color: red;
+    font-size: 12vh;
+    left: 0;
+    top: 0;
+    padding: 5vh 5vw;
+}
+h3{
+    color: aliceblue;
+    position: absolute;
+    bottom: 0;
+    right: 3vh;
+    padding: 1vh;
+}
+.life{
+    right: 5.5vh;
+    color: #05da4f;
+}
+.atack{
+    right: 0vh;
+    color: red;
+}
+.sep{
+    color: aliceblue;
+    position: absolute;
+    bottom: 0;
+    right: 5.5vh;
+    padding: 1vh;
+}
+.lifeP{
+    right: 7.5vh;
+    color: #025e22;
+}
+.atackP{
+    right: 0vh;
+    color: red;
+}
+.container-general{
+    width: 100vw;
+    height: 100vh;
+}
+.background{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    overflow: auto;
+    max-width: 100vw;
+    height: 100vh;
+    background-image: url(../source/bg2.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.batle{
+    display: flex;
+    justify-content: center;
+}
+.table{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 0.2vh ;
+    margin: 0.2vh auto;
+    width: 53.5vw;
+    height: 70vh;
+    z-index: 50;
+    background-image: url(../source/Marco1.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    
+}
+.batle{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 4.8vh;
+    margin: 4.8vh auto;
+}
+.rowA{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    flex-direction: row;
+    padding:0 2vw 1vh 2vw;
+    width: 53.5vw;
+}
+.rowE{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    flex-direction: row;
+    padding:0 2vw 1vh 2vw;
+    width: 53.5vw;
+}
+.slotE{
+    position: relative;
+    overflow: hidden;
+    width: 9.5vw;
+    height: 30vh;
+    z-index: 100;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    /* width: 136px;
+    height: 145px; */
+}
+.slotA{
+    position: relative;
+    overflow: hidden;
+    width: 9.5vw;
+    height: 30vh; 
+    z-index: 100;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    /* width: 136px;
+    height: 145px; */
+}
+
+.slotE:hover,.slotA:hover{
+    background-color: rgba(0, 0, 0, 0.153);
+}
+.hoverS{background-color: rgba(0, 0, 0, 0.153);}
+
+.hand{
+    position: absolute;
+    display: inline-block;
+    width: 37vw;
+    height: 30vh;
+    bottom: 0.5vh;
+    margin: auto;
+}
+.card{
+    display: inline-block;
+    position: absolute;
+    width: 9.5vw;
+    height: 30vh;
+    bottom: 0;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.I{
+    transform: rotate(-15deg);
+    bottom: -3vh;
+    left: 0;
+    z-index: 1;
+}.II{
+    left:8.5vw;
+    z-index: 2;
+    transform: rotate(-4deg);
+}.III{
+    left:17.5vw;
+    z-index: 3;
+    transform: rotate(4deg);
+}
+.IIII{
+    left:26vw;
+    transform: rotate(15deg);
+    bottom: -3vh;
+    z-index: 3;
+}
+
+.I:hover{
+    z-index: 100;
+    border: 2px solid red;
+    width: 9.5vw;
+    height: 30vh;
+    cursor: pointer;
+    transform: rotate(-15deg);
+}.II:hover{
+    z-index: 100;
+    border: 2px solid red;
+    width: 9.5vw;
+    height: 30vh;
+    cursor: pointer;
+}.III:hover{
+    z-index: 100;
+    border: 2px solid red;
+    width: 9.5vw;
+    height: 30vh;
+    cursor: pointer;
+}
+.IIII:hover{
+    z-index: 100;
+    border: 2px solid red;
+    width: 9.5vw;
+    height: 30vh;
+    cursor: pointer;
+}
+.normalize{
+    transform: rotate(0);
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 0;
+    width: 9.5vw;
+    height: 30vh;
+}
+.normalize:hover{
+    cursor: pointer;
+    width: 9.5vw;
+    height: 30vh;
+    transform: rotate(0);
+}
+.manaGif{
+    height: 11vh;
+    width: 8vw;
+    bottom: 0;
+    border-radius: 100%;
+    z-index: 0;
+}
+.manaContainer{
+    position: absolute;
+    height: 60vh;
+    width: 8vw;
+    z-index: 100;
+    background-image: url(../source/new/barramana.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.mana{
+    position: absolute;
+    overflow: hidden;
+    margin: 5vh 0;
+    height: 60vh;
+    width: 8vw;
+    right: 8vw;
+    z-index: 100;
+}
+.manaCount{
+    position: absolute;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    margin: 2.5vh 0 0 0;
+    height: 55vh;
+    width: 8vw;
+}
+.buttons{
+    position: absolute;
+    cursor: pointer;
+    width: 7vw;
+    height: 17vh;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.buttonAtack{
+    left: 5vh;
+    bottom: 10vh;
+}
+.buttonPas{
+    left: 30vh;
+    bottom: 10vh;
+}
+.buttonAtack img,.buttonPas img{
+    position: absolute;
+    cursor: pointer;
+    width: 7vw;
+    height: 17vh;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.buttonAtack:hover, .buttonPas:hover{
+    transform: scale(0.98)
+}
+.mazo{
+    position: absolute;
+    bottom: 32vh;
+    left: 6vw;
+    width: 9.5vw;
+    height: 32vh;
+    background-image: url(../source/new/tapacarta.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.mazo:hover, .player:hover{
+    cursor: pointer;
+}
+.player{
+    position: absolute;
+    bottom: 65vh;
+    left: 6vw;
+    width: 9.5vw;
+    height: 32vh;
+    background-image: url(../source/player.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+#counterTurn,#counterAtacks{
+    display: none;
+}
+#restart{
+    position: relative;
+    background-color: blue;
+    width: 20vw;
+    height: 10vh;
+    top: 0;
+}
+#gameOver{
+    display: none;
+}
+.gameOverL{
+    position: absolute;
+    top: 0;
+    justify-content: center;
+    align-items: center;
+    color: red;
+    text-align: center;
+    font-size: 3rem;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.518);
+    z-index: 1000;
+}
+.gameOverW{
+    position: absolute;
+    top: 0;
+    justify-content: center;
+    align-items: center;
+    color: green;
+    text-align: center;
+    font-size: 3rem;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.518);
+    z-index: 1000;
+}
