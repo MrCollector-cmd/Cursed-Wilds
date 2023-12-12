@@ -101,7 +101,7 @@ export function controlMazo(mazoP) {
 }
 export function createMana(){
     const manaIm = document.createElement('img')
-    manaIm.src = "../source/new/mana.png";
+    manaIm.src = "../source/mana.png";
     manaIm.classList.add('manaGif',`cont`);
     return manaIm;
 }
